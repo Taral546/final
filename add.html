@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+	<body>
+        <ul>
+            <li><a href="owner.html">Home</a></li>
+            <span id="loginSignupMenu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </span>
+            <li><a href="add.html">Property/Workspace</a></li>
+            <li style="float:right"><a href="#" id="signout" onclick="signOut()">Signout</a></li>
+            <li style="float:right;pointer-events: none;"><a href="" id="username">Welcome</a></li>
+        </ul>
+        <h>Add Property/Workspace</h1>
+        <div style="text-align: center;">
+            <input type="text" id="title" placeholder="Enter Title" autofocus/>
+            </br></br>
+            <textarea placeholder=" Details here" id="description" rows="5"></textarea>
+            </br></br>
+            <select id="type">
+                <option value="">Property/Workspace</option>
+                <option value="property">Property</option>
+                <option value="workspace">Workspace</option>
+            </select>
+            </br>
+            <input type="submit" id="post_button" class="button_hover" value="Post" onclick="add_new_user()"/>
+        </div>
+        
+	</body>
+</html>

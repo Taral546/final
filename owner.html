@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+	<body onload="show_data()">
+        <ul>
+            <li><a href="owner.html">Home</a></li>
+            <span id="loginSignupMenu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </span>
+            <li><a href="add.html">Add Property/Workspace</a></li>
+            <li style="float:right"><a href="login.html" id="signout" onclick="signOut()">Signout</a></li>
+            <li style="float:right;pointer-events: none;"><a href="" id="username">Welcome Guest!</a></li>
+        </ul>
+        <h1>List of Properties/Workspaces</h1>
+        <div>
+            <table style="text-align: center;" id="list_of_properties_workspaces">
+
+            </table>
+        </div>
+        
+       
+	</body>
+</html>
